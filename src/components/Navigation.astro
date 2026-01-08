@@ -1,0 +1,104 @@
+---
+const pathName = Astro.url.pathname.replace(/\$/, "");
+
+const isActive = (path: string) => {
+  if (path === "/") return pathName === "/";
+  return pathName === path || pathName.startsWith(path + "/");
+};
+
+// onMounted(() => {
+//   console.log("pathname:", window.location.pathname);
+//   console.log(window.location.pathname);
+//   currentPath.value = window.location.pathname;
+// });
+
+// const isActive = (path: string) => {
+//   if (path === "/") {
+//     return currentPath.value === "/";
+//   }
+
+//   return currentPath.value === path || currentPath.value.startsWith(path + "/");
+// };
+---
+
+<div id="menu" class="nav-links">
+  <a href="/" class:menu-active={isActive("/")}>首页</a>
+  <a href="/blog/" class:menu-active={isActive("/blog")}>博客</a>
+  <a href="/about/" class:menu-active={isActive("/about")}>关于</a>
+</div>
+
+<style>
+  #menu {
+    margin-bottom: 24px;
+  }
+  .nav-links a.testStyle {
+    background-color: #66ccff;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* gap: 1em; */
+    position: static;
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .nav-links a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0d0950;
+    border-bottom: 2px solid transparent;
+    padding: 10px;
+    /* outline: 1px solid black; */
+  }
+
+  .nav-links a.menu-active {
+    border-bottom-color: #303030;
+  }
+
+  .nav-links a:hover {
+    border-bottom-color: black;
+  }
+
+  /* .nav-links a:active {
+  color: hotpink;
+  border-bottom: 2px solid black;
+} */
+
+  /* .menu-active a {
+  color: #fff;
+} */
+  /* .nav-links a:hover,
+.nav-links a:focus {
+  background-color: #ff9776;
+} */
+  /* 
+:has(.menu[aria-expanded="true"]) .nav-links {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .menu {
+    display: none;
+  }
+} */
+</style>

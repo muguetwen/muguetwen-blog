@@ -1,0 +1,70 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+import PostList from "../components/posts/PostList.vue";
+import PostItem from "../components/posts/PostItem.vue";
+//一次性访问所有文章的数据
+const allPosts = Object.values(
+  import.meta.glob("./posts/*.md", { eager: true })
+);
+
+// const dateToNumber = (date: string) => {
+//   return Number(date.replaceAll("-", ""));
+// };
+
+// const sortedPosts = allPosts.sort((a: any, b: any) => {
+//   const aDate = a.frontmatter.pubDate
+//     ? Number(a.frontmatter.pubDate.replaceAll("-", ""))
+//     : 0;
+
+//   const bDate = b.frontmatter.pubDate
+//     ? Number(b.frontmatter.pubDate.replaceAll("-", ""))
+//     : 0;
+
+//   return bDate - aDate;
+// });
+
+// const dateToNumber = (date: string) => {
+//   return new Date(date).getTime();
+// };
+
+const sortedPosts = allPosts.sort((a: any, b: any) => {
+  const aDate = a.frontmatter.pubDate
+    ? new Date(a.frontmatter.pubDate).getTime()
+    : 0;
+
+  const bDate = b.frontmatter.pubDate
+    ? new Date(b.frontmatter.pubDate).getTime()
+    : 0;
+
+  return bDate - aDate; // 大 → 小
+});
+// import "../styles/global.css";
+---
+
+<BaseLayout>
+  <!-- <PostList client:load /> -->
+  {
+    sortedPosts.map((post: any) => {
+      return (
+        <PostItem
+          client:load
+          url={post.url}
+          title={post.frontmatter.title}
+          description={post.frontmatter.description}
+          date={
+            post.frontmatter.pubDate
+              ? new Date(post.frontmatter.pubDate).toISOString().slice(0, 10)
+              : "未知日期"
+          }
+        />
+      );
+    })
+  }
+
+  <!-- {
+    allPosts.map((post: any) => (
+      <BlogPost url={post.url} title={post.frontmatter.title} />
+    ))
+  } -->
+</BaseLayout>

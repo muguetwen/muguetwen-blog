@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+const pageTitle = "关于我 & 这个博客";
+
+//导入Markdown
+// const aboutFile = Object.values(
+//   import.meta.glob("./about/index.md", { eager: true })
+// );
+
+// const about: any = aboutFile[0];
+// const Content: any = about.Content;
+---
+
+<BaseLayout>
+  <article class="markdown-body">
+    <h1>{pageTitle}</h1>
+    <slot />
+  </article>
+</BaseLayout>
+
+<style>
+  .title {
+    text-align: center;
+  }
+  .markdown-body {
+    font-size: 18px; /* 主体文字 */
+    line-height: 1.6;
+    color: #333;
+    /* background-color: #66ccff; */
+  }
+</style>

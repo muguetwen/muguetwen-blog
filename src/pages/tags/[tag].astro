@@ -1,0 +1,46 @@
+---
+//动态创建页面   --  动态路由
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogPost from "../../components/BlogPost.astro";
+
+//返回一个页面路由数组
+export async function getStaticPaths() {
+  //读取所有文章
+  const allPosts = Object.values(
+    import.meta.glob("/src/posts/*.md", { eager: true })
+  );
+
+  //提供一个包含博客文章中使用的每个标签的列表
+  const uniqueTags = [
+    ...new Set(allPosts.map((post: any) => post.frontmatter.tags ?? [])),
+  ];
+
+  // uniqueTags 数组自动生成此对象列表，以定义每个参数。
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post: any) =>
+      post.frontmatter.tags.includes(tag)
+    );
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+// const filteredPosts = posts.filter((post: any) =>
+//   post.fontmatter.tags?.includes(tag)
+// );
+---
+
+<BaseLayout pageTitle={tag}>
+  <p>包含[{tag}]标签的文章</p>
+  <ul>
+    {
+      posts.map((post: any) => (
+        <BlogPost url={post.url} title={post.frontmatter.title} />
+      ))
+    }
+  </ul>
+</BaseLayout>;

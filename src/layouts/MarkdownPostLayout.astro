@@ -1,0 +1,76 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <article class="markdown-body">
+    <h1>{frontmatter.title}</h1>
+    <p class="date">{frontmatter.pubDate.toString().slice(0, 10)}</p>
+    <slot />
+  </article>
+</BaseLayout>
+
+<style>
+  :global(.markdown-body pre) {
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    overflow-x: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  :global(.markdown-body pre code) {
+    font-family:
+      "Source Code Pro", "JetBrains Mono", "Fira Code", Consolas, Menlo, Monaco,
+      "Courier New", monospace;
+  }
+  a {
+    color: #00539f;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    margin: 0.25em;
+    border: dotted 1px #a1a1a1;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1.15em;
+    background-color: #f8fcfd;
+  }
+  .date {
+    margin-left: auto;
+    font-size: 1rem;
+    color: gray;
+  }
+  .markdown-body {
+    font-size: 18px; /* 主体文字 */
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .markdown-body h1 {
+    font-size: 2rem;
+  }
+  .markdown-body h2 {
+    font-size: 1.8rem;
+  }
+  .markdown-body h3 {
+    font-size: 1.5rem;
+  }
+  .markdown-body h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  .markdown-body p {
+    font-size: 1rem;
+    margin-bottom: 1em;
+  }
+  .markdown-body li {
+    font-size: 1rem;
+  }
+</style>
