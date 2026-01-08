@@ -1,46 +1,13 @@
-# Astro Starter Kit: Basics
+欢迎光临！我是 Muguet Wen。<br />
+还在学习的软工专业学生，正在备战考研中。<br />
+梦想创作出自己的漫画作品和小说。我是一个七年都没进步的“画画初学者”<br />
+我对什么都感兴趣，同时也对什么都不感兴趣。
+对未来还是迷茫……
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+这个博客既有生活记录，也有创作、生活分享、知识分享，目前不把它们分类管理。
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### 其他平台
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Github: https://github.com/muguetwen<br />
+X(Twitter): https://x.com/MuguetWen<br />
+稀土掘金：https://juejin.cn/user/458968681153595<br />
