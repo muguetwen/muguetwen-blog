@@ -1,0 +1,9 @@
+{
+  "theme": "moonstone",
+  "accentColor": "#29ae93",
+  "cssTheme": "Atom",
+  "baseFontSize": 18,
+  "enabledCssSnippets": [
+    "FileSider"
+  ]
+}
