@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-Kindle.md",
+                "file": "2022-note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-Kindle"
+              "title": "2022-note"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "alphabeticalReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -172,17 +172,17 @@
   },
   "active": "d2c3d5804761fe55",
   "lastOpenFiles": [
-    "2024-01-01.md",
-    "2024-03-17.md",
-    "2022-note.md",
+    "Chateau.md",
+    "2024-03-31 Kindle.md",
+    "2020-05-11 Summer.md",
+    "2020-05-01 Hello BLog.md",
     "2023-note.md",
-    "2024-Kindle.md",
-    "不自律的生活.md",
+    "2022-note.md",
+    "2024-2025-note.md",
     "放下过去，就此开始吧.md",
-    "Blog.md",
+    "2024-note.md",
+    "2024-01-01.md",
     "VUe.md",
-    "2020Summer.md",
-    "笔记.md",
-    "Chateau.md"
+    "笔记.md"
   ]
 }
