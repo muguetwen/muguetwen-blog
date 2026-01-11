@@ -11,4 +11,8 @@ export default defineConfig({
       theme: "dracula-soft",
     },
   },
+  image: {
+    // 示例：允许来自单个域名的远程图像优化。
+    domains: ["astro.build"],
+  },
 });

@@ -28,7 +28,7 @@ pubDate: 2022-02-03 22:29:00
 
   行走的动作不明显，人物走路都是小碎步。横向还好，纵向很容易看成平移或拖着地。有些地方按住 shift 疾走，主角看起来就像个棋子一样平移。
 
-<!-- ![](./img/background.png) -->
+<!-- ![横向行走](./img/background.png) -->
 
 </font><font color= #66ccff><center>横向行走</center></font>
 
