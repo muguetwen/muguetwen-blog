@@ -8,7 +8,15 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   output: "static",
   site: "https://blog.muguetwen.top/",
-  integrations: [vue(), sitemap()],
+  integrations: [
+    vue(),
+    sitemap({
+      filter: (page) =>
+        page !== "https://blog.muguetwen.top/blog" &&
+        page !== "https://blog.muguetwen.top/about" &&
+        page !== "https://blog.muguetwen.top/posts/",
+    }),
+  ],
   markdown: {
     shikiConfig: {
       theme: "dracula-soft",
