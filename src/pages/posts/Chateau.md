@@ -5,7 +5,8 @@ pubDate: 2022-02-03 22:29:00
 # cover: https://media.st.dl.eccdnx.com/steam/apps/1561910/header.jpg?t=1628498809
 ---
 
-> 注：因为一些原因，本文的图片均失效，可以在 B 站上看这篇文章=>https://www.bilibili.com/opus/623028570144722777
+> 注：因为一些原因，本文的图片均失效，可以在 B 站上看这篇文章=>
+> https://www.bilibili.com/opus/623028570144722777
 
 > 游戏名称：凯尔文-Kelvin and the Chateau<br/>
 > 作者：Forgotten<br/>
@@ -32,11 +33,11 @@ pubDate: 2022-02-03 22:29:00
 
 </font><font color= #66ccff><center>横向行走</center></font>
 
-![](http://i0.hdslb.com/bfs/article/ec423de9a615ee4dc19f0b99182513d6b9b7e2df.gif)
+![](https://i0.hdslb.com/bfs/article/ec423de9a615ee4dc19f0b99182513d6b9b7e2df.gif)
 
 </font><font color= #66ccff><center>纵向行走</center></font>
 
-![](http://i0.hdslb.com/bfs/article/4abeafb8a32d7e26e19c17c464f582703af2d3f2.gif)
+![](https://i0.hdslb.com/bfs/article/4abeafb8a32d7e26e19c17c464f582703af2d3f2.gif)
 
 </font><font color= #66ccff><center>主角“平移”</center></font>
 
@@ -50,7 +51,7 @@ pubDate: 2022-02-03 22:29:00
 
   **如果做好了引导，游戏体验自然直线上升。**
 
-![](http://i0.hdslb.com/bfs/article/316f27a1bc3623ef1a79071371bd5d6734aa529e.png@942w_567h_progressive.webp)
+![](https://i0.hdslb.com/bfs/article/316f27a1bc3623ef1a79071371bd5d6734aa529e.png@942w_567h_progressive.webp)
 
 举一个好案例。在游戏《独自在家》中，有两扇门之间的墙上有个隐藏的密码锁。旧版里，如果不看评论，谁能找得出来？而重置版解决了这个问题，在密码锁上面挂上鳄鱼挂件，再加上一束光照在墙上，暗示玩家这里有东西。
 
@@ -58,7 +59,7 @@ pubDate: 2022-02-03 22:29:00
 
 </font><font color= #66ccff><center>旧版</center></font>
 
-![](http://i0.hdslb.com/bfs/article/eedd5398187252520d9ed3558be39d08162ebee0.png@881w_557h_progressive.webp)
+![](https://i0.hdslb.com/bfs/article/eedd5398187252520d9ed3558be39d08162ebee0.png@881w_557h_progressive.webp)
 
 </font><font color= #66ccff><center>重置版</center></font>
 
