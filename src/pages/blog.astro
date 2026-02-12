@@ -4,9 +4,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import PostItem from "../components/posts/PostItem.vue";
 //一次性访问所有文章的数据
 const allPosts = Object.values(
-  import.meta.glob("./posts/*.md", { eager: true })
+  import.meta.glob("./posts/*.md", { eager: true }),
 );
 
+const pageTitle = "博客";
 // const dateToNumber = (date: string) => {
 //   return Number(date.replaceAll("-", ""));
 // };
@@ -41,7 +42,7 @@ const sortedPosts = allPosts.sort((a: any, b: any) => {
 // import "../styles/global.css";
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <!-- <PostList client:load /> -->
   {
     sortedPosts.map((post: any) => {

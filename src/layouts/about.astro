@@ -3,8 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
+// document.title = "关于";
 
-const pageTitle = "关于我 & 这个博客";
+const pageTitle = "关于我";
 
 //导入Markdown
 // const aboutFile = Object.values(
@@ -15,7 +16,7 @@ const pageTitle = "关于我 & 这个博客";
 // const Content: any = about.Content;
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <article class="markdown-body">
     <h1>{pageTitle}</h1>
     <slot />

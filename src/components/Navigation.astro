@@ -47,6 +47,7 @@ const isActive = (path: string) => {
 
   .nav-links a {
     display: block;
+    position: relative;
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
@@ -59,13 +60,23 @@ const isActive = (path: string) => {
     /* outline: 1px solid black; */
   }
 
+  .nav-links a:hover::after {
+    content: "";
+    position: absolute;
+    background: #000;
+    height: 3px;
+    width: 100%;
+    bottom: -4px;
+    left: 0;
+  }
+
   .nav-links a.menu-active {
     border-bottom-color: #303030;
   }
 
-  .nav-links a:hover {
+  /* .nav-links a:hover {
     border-bottom-color: black;
-  }
+  } */
 
   /* .nav-links a:active {
   color: hotpink;
